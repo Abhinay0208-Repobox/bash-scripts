@@ -1,0 +1,14 @@
+#!/bin/bash
+#Bash Script To Use Unset Variable
+
+name="Harry Potter"
+
+echo "Before Unset Output Will Come"
+echo "Name Is : $name"
+
+echo "After Unset Output Will Not Come"
+
+unset name
+
+echo "Name Is:$name"
+
