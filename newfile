@@ -1,0 +1,15 @@
+#!/bin/bash
+#Bash Script To Create Empty File.
+
+read -p "Enter FileName To Create:" FILENAME
+echo                               #Add New Empty Line
+
+if [ -e "$FILENAME" ]; then
+	echo "File Exists.Try Again"
+        echo                       #Add New Empty Line
+else
+	touch "$FILENAME"
+	echo "File '$FILENAME' Created."
+
+fi
+
