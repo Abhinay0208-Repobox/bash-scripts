@@ -1,0 +1,16 @@
+#!/bin/bash
+#global variable 
+
+global_var="file.txt"
+
+#accessing global variable outside the function
+touch "/$global_var"
+echo "File Created:/$global_var"
+
+#accessing global variable inside the function
+function use_global_var(){
+		touch "/home/$global_var"
+		echo "File Created:/home/$global_var"
+}
+
+use_global_var
