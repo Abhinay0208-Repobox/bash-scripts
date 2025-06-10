@@ -1,0 +1,20 @@
+#!/bin/bash
+#Script to demonstrate use of Local Variable
+
+global_var="I'm global variable"
+
+
+echo "Accessing global variable outside the function:$global_var"
+echo
+function use_local_variable(){
+		
+	local local_var="I'm local variable"
+	
+	echo "Accessing local variable inside the function:$local_var"
+	echo "Accessing global variable inside the function:$global_var"
+}
+
+use_local_variable          #Function Call
+
+echo
+echo "Accessing local variable outside the function:$local_var"
