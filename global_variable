@@ -1,0 +1,13 @@
+#!/bin/bash
+#Bash script to use global variable
+
+global_variable="I'm global variable"
+
+function global(){
+	echo "Inside Function:$global_variable"
+	
+}
+
+global
+
+echo "Outside Function:$global_variable"
